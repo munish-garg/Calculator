@@ -18,6 +18,14 @@ for(let btn of button){
                 input.value = 'Invalid Operation!!!';
             }
         }
+        else if(e.target.innerText === 'Del'){
+            if(input.value!==''){
+                //It means that there is some length of string present..
+                let arr = input.value.split('');
+                arr.pop();
+                input.value = arr.join('');
+            }
+        }
         else{
             input.value+=e.target.innerText;
         }
