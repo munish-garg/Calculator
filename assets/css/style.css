@@ -29,3 +29,9 @@ td button{
     height: 100%;
     cursor: pointer;
 }
+
+@media screen and (max-width:480px){
+    #section{
+        width: 100%;
+    }
+}
